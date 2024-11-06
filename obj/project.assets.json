@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MI PC\\Desktop\\CasoTrauma\\CasoTrauma.csproj",
+      "projectUniqueName": "C:\\Users\\MI PC\\Desktop\\Caso_Trauma\\CasoTrauma.csproj",
       "projectName": "CasoTrauma",
-      "projectPath": "C:\\Users\\MI PC\\Desktop\\CasoTrauma\\CasoTrauma.csproj",
+      "projectPath": "C:\\Users\\MI PC\\Desktop\\Caso_Trauma\\CasoTrauma.csproj",
       "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MI PC\\Desktop\\CasoTrauma\\obj\\",
+      "outputPath": "C:\\Users\\MI PC\\Desktop\\Caso_Trauma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasoTrauma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebf8b5da2ec0bdd7bcc3367e3f220e44d10d8194")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasoTrauma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasoTrauma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
