@@ -1,0 +1,76 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/* Círculo de usuario */
+.user-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-text {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* Estilo para los círculos pequeños */
+.status-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.status-circle.selected {
+    background-color: green;
+}
+
+.status-circle#alerta.selected {
+    background-color: yellow;
+}
+
+.status-circle#noDisponible.selected {
+    background-color: red;
+}
+
+.status-label {
+    position: absolute;
+    top: 50px;
+    font-size: 12px;
+}
+
+#statusText {
+    color: #007bff;
+}

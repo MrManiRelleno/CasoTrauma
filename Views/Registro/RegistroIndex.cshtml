@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Registro de Usuario</h2>
+    <form asp-action="Register" method="post" class="mt-4">
+        <div class="form-group">
+            <label for="FullName">Nombre Completo</label>
+            <input type="text" name="FullName" class="form-control" id="FullName" placeholder="Ingresa tu nombre completo" required>
+        </div>
+        <div class="form-group mt-3">
+            <label for="Email">Correo Electrónico</label>
+            <input type="email" name="Email" class="form-control" id="Email" placeholder="Ingresa tu correo" required>
+        </div>
+        <div class="form-group mt-3">
+            <label for="Password">Contraseña</label>
+            <input type="password" name="Password" class="form-control" id="Password" placeholder="Crea una contraseña" required>
+        </div>
+        <div class="form-group mt-3">
+            <label for="ConfirmPassword">Confirmar Contraseña</label>
+            <input type="password" name="ConfirmPassword" class="form-control" id="ConfirmPassword" placeholder="Confirma tu contraseña" required>
+        </div>
+        <button type="submit" class="btn btn-success mt-4 w-100">Registrarse</button>
+        <p class="text-center mt-3">¿Ya tienes una cuenta?<a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="LoginIndex">Iniciar sesión</a></p>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<div class="container mt-5">
+    <h2 class="text-center">Iniciar Sesión</h2>
+        <!-- Mostrar mensaje de error si existe -->
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <form asp-action="LoginIndex" method="post" class="mt-4">
+        <div class="form-group">
+            <label for="Email">Correo Electrónico</label>
+            <input type="email" name="Email" class="form-control" id="Email" placeholder="Ingresa tu correo" required>
+        </div>
+        <div class="form-group mt-3">
+            <label for="Password">Contraseña</label>
+            <input type="password" name="Password" class="form-control" id="Password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4 w-100">Iniciar Sesión</button>
+        <p class="text-center mt-3">¿No tienes cuenta?<a class="nav-link text-dark" asp-area="" asp-controller="Registro" asp-action="RegistroIndex">Regístrate</a></p>
+    </form>
+</div>

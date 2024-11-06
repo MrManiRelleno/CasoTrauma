@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home page";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div class="container mt-5 text-center">
+    <!-- Círculo grande con la imagen de usuario -->
+    <div class="d-flex justify-content-center">
+        <div class="circle user-circle">
+            <span class="user-text">Usuario</span>
+        </div>
+    </div>
+    
+    <h4 class="mt-3">Iniciar un formulario de emergencia</h4>
+    
+    <!-- Enlace al formulario de emergencia -->
+    <a href="@Url.Action("CrearEmergencia", "Emergencia")" class="btn btn-primary mt-3">Crear Emergencia</a>
+
+    <!-- Círculos pequeños de estado -->
+    <div class="d-flex justify-content-center mt-5">
+        <div class="status-circle" id="disponible" onclick="setStatus('disponible')">
+            <div class="status-label">Disponible</div>
+        </div>
+        <div class="status-circle mx-3" id="alerta" onclick="setStatus('alerta')">
+            <div class="status-label">Alerta</div>
+        </div>
+        <div class="status-circle" id="noDisponible" onclick="setStatus('noDisponible')">
+            <div class="status-label">No disponible</div>
+        </div>
+    </div>
+
+    <!-- Texto para mostrar el estado -->
+    <h5 id="statusText" class="mt-4">Estado: No seleccionado</h5>
+</div>
